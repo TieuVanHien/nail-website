@@ -1,0 +1,13 @@
+@use "../variables" as *;
+@use "./section" as *;
+@use "../components/mixin" as *;
+
+.container {
+  width: 1440px;
+  max-width: 90%;
+  position: relative;
+  @include respond-to("tablet") {
+    max-width: 100%;
+    position: relative;
+  }
+}

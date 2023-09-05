@@ -1,0 +1,87 @@
+@use "../variables" as *;
+@use "../container" as *;
+@use "./mixin" as *;
+
+.nav {
+  position: relative;
+  .nav-container {
+    position: fixed;
+    height: 13%;
+    width: 100%;
+    top: 0;
+    z-index: 5;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: $black;
+    .hamburger-react {
+      display: none;
+    }
+    .home {
+      width: 30%;
+      color: $white;
+      margin-left: 1em;
+    }
+    .nav-links {
+      margin-left: 15em;
+
+      .link {
+        color: $white;
+        margin: 1.5em;
+        text-decoration: none;
+        &.active {
+          text-decoration: underline 2px $main;
+          text-underline-offset: 0.5em;
+          transition: 300ms ease;
+        }
+        &:hover {
+          text-decoration: underline 2px $main;
+          text-underline-offset: 0.5em;
+          transition: 300ms ease;
+        }
+      }
+    }
+
+    @include respond-to("tablet") {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      padding-left: 2em;
+      .hamburger-react {
+        display: flex;
+        right: 10%;
+      }
+      .nav-links {
+        height: 15em;
+        width: 8em;
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        justify-content: space-evenly;
+        align-items: center;
+        top: 10%;
+        border-radius: 0.5em;
+        background-color: $main;
+        right: 10%;
+        opacity: 1;
+        transition: opacity 400ms ease;
+        .link {
+          margin: 0em;
+          &.active {
+            background-color: transparent;
+            text-decoration: underline 2px $white;
+            text-underline-offset: 0.5em;
+            transition: 300ms ease;
+            cursor: pointer;
+          }
+        }
+        &.closed {
+          .hamburger {
+            transform: none;
+          }
+          opacity: 0;
+        }
+      }
+    }
+  }
+}

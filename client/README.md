@@ -1,6 +1,6 @@
-# Caravelle <br></br>
-Restaurant and Louge Services<br></br>
--> Waiting for backend developer deploy backend server<br></br>
+# Getting Started with Create React App
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 

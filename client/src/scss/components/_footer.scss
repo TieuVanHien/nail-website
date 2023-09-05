@@ -1,0 +1,86 @@
+@use "../variables" as *;
+@use "../container" as *;
+@use "./mixin" as *;
+
+.footer {
+  .footer-container {
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    background-color: $black;
+    .button {
+      background-color: $white;
+      color: $black;
+      font-family: $fontBody;
+      &:hover {
+        color: $black;
+        background-color: $white;
+        text-decoration: underline 2px $main;
+        text-underline-offset: 0.5em;
+        transition: background-color 200ms ease text-decoration 200ms linear
+          border-color 200ms ease;
+      }
+    }
+    .left-footer {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      .left-text {
+        color: $white;
+        margin-left: 10em;
+        width: 70%;
+        p {
+          margin: 0.2em;
+          color: gray;
+        }
+      }
+    }
+    .right-footer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 50%;
+      p {
+        color: $main;
+        margin-left: 40px;
+      }
+      li {
+        a {
+          color: $white;
+          text-decoration: none;
+          &:hover {
+            color: $main;
+          }
+        }
+      }
+    }
+  }
+  @include respond-to("tablet") {
+    width: 100%;
+    .footer-container {
+      height: auto;
+      padding: 2em;
+      .left-footer {
+        margin-left: 1em;
+        width: 70%;
+        .left-text {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: flex-start;
+          margin: 0;
+        }
+      }
+      .right-footer {
+        width: 40%;
+        ul {
+          li {
+            margin-top: 0.5em;
+          }
+        }
+      }
+    }
+  }
+}
