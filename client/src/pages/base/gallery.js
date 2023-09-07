@@ -1,9 +1,9 @@
 import {
   Narrow,
-  sushiImg1,
-  ramenImg,
-  sushiImg2,
-  cocktail,
+  nailEx1,
+  nailEx2,
+  nailEx3,
+  nailEx4,
   vector1,
   vector2,
 } from "../../images";
@@ -11,7 +11,7 @@ import { Button } from "@mui/material";
 import React, { useState } from "react";
 import { MenuModal } from "../../components/menuModal";
 
-export const Menu = () => {
+export const Gallery = () => {
   const [open, handleOpen] = useState(false);
   return (
     <section className="menu" id="menu">
@@ -23,20 +23,20 @@ export const Menu = () => {
         </div>
         <div className="menu-text">
           <p>
-            Located in the heart of Litile Italy, Sorrento restaurant pizzeria
-            bring sleek modern design
+            Explore our gallery and immerse yourself in the world of exquisite
+            nail artistry at QueenIsland.
             <img className="narrow-img" src={Narrow} alt="Narrow" />
             <Button className="button" onClick={() => handleOpen(true)}>
-              See our menu
+              See More
             </Button>
             {open && <MenuModal OpenModal={handleOpen} />}
           </p>
         </div>
         <div className="menu-images">
-          <img className="model model-left" src={sushiImg1} alt="model" />
-          <img className="model model-right" src={ramenImg} alt="model" />
-          <img className="model model-left" src={sushiImg2} alt="model" />
-          <img className="model model-right" src={cocktail} alt="model" />
+          <img className="model model-left" src={nailEx1} alt="model" />
+          <img className="model model-right" src={nailEx2} alt="model" />
+          <img className="model model-left" src={nailEx3} alt="model" />
+          <img className="model model-right" src={nailEx4} alt="model" />
         </div>
       </div>
     </section>

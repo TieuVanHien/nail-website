@@ -1,5 +1,5 @@
-import NavBg from "../../images/nav-background.png";
-import Logo from "../../assets/caravelle.svg";
+import home from "../../images/home.jpeg";
+import Logo from "../../assets/queenisland.jpg";
 import { Roll } from "react-reveal";
 
 export const Home = () => {
@@ -7,10 +7,21 @@ export const Home = () => {
     <section className="home" id="home">
       <div className="container">
         <div className="bg">
-          <img src={NavBg} alt="home page background" />
+          <img src={home} alt="home page background" />
         </div>
-        <Roll left>
-          <img src={Logo} className="logo" alt="logo" />
+        <Roll style={{ position: "relative" }} left>
+          <img
+            style={{
+              borderRadius: "50%",
+              position: "absolute",
+              marginTop: "5em",
+              width: "15em",
+              height: "15em",
+            }}
+            src={Logo}
+            className="logo"
+            alt="logo"
+          />
         </Roll>
       </div>
     </section>

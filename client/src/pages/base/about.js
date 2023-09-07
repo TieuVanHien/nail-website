@@ -1,4 +1,4 @@
-import { about, ramen, sushi } from "../../images";
+import { about, nail1, nail2 } from "../../images";
 import { Zoom } from "react-reveal";
 
 export const About = () => {
@@ -12,29 +12,30 @@ export const About = () => {
         </div>
         <div className="about infor">
           <h3>~ WHO WE ARE</h3>
-          <h1>Caravelle - We are Here To Serve The Best Sushi</h1>
+          <h1>QueenIsland - We are Here To Serve The Best Beauty Services</h1>
           <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry.{" "}
+            We take pride in offering an array of nail services designed to
+            enhance your natural beauty and boost your confidence.
           </p>
           <div className="about features">
             <div className="icon ramen-icon">
-              <img src={ramen} alt="ramen icon" />
+              <img src={nail1} alt="nail icon" />
               <div className="detail ramen">
-                <h3>Lorem Ipsum </h3>
+                <h3>Manicures and Pedicures </h3>
                 <p>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry.{" "}
+                  Our classic manicures and pedicures are designed to maintain
+                  the health and beauty of your nails.
                 </p>
               </div>
             </div>
             <div className="icon sushi-icon">
-              <img src={sushi} alt="sushi icon" />
+              <img src={nail2} alt="nail icon num2" />
               <div className="detail sushi">
-                <h3>Lorem Ipsum </h3>
+                <h3>Nail Spa Packages </h3>
                 <p>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry.{" "}
+                  Celebrate special moments with our nail spa packages. Whether
+                  it's a bridal shower, birthday party, or a girls' day out, we
+                  offer customized spa experiences for groups.
                 </p>
               </div>
             </div>

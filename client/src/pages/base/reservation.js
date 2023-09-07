@@ -51,9 +51,10 @@ export const Reservation = () => {
       <div className="container">
         <div className="title">
           <h1>Reservation</h1>
-          <p>
-            Please make your reservation below and we will have it served at
-            your convenient place, we offer best ever!
+          <p style={{ width: "50%" }}>
+            Ready to experience the luxury and convenience of our nail services?
+            Reserve your spot at QueenIsland Nails & Spa today! place, we offer
+            best ever!
           </p>
           <h2>Schedule</h2>
           <p>Monday to Sunday: 11:00 - 00:00 am</p>

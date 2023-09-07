@@ -1,6 +1,6 @@
 import React from "react";
 import Modal from "react-modal";
-import { menu } from "../images";
+// import { menu } from "../images";
 
 export const MenuModal = ({ OpenModal }) => {
   return (
@@ -12,7 +12,7 @@ export const MenuModal = ({ OpenModal }) => {
       overlayClassName="over-lay"
     >
       <div className="menu">
-        <img className="menu" src={menu} alt="menu" />
+        {/* <img className="menu" src={menu} alt="menu" /> */}
       </div>
     </Modal>
   );

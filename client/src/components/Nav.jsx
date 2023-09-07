@@ -10,7 +10,7 @@ export const Nav = () => {
     <section className="nav">
       <div className="nav-container">
         <Link className="home" to="home" smooth={true}>
-          <h2>Caravelle</h2>
+          <h2>QueenIsland Nails & Spa</h2>
         </Link>
         <Hamburger
           size={25}
