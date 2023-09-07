@@ -19,10 +19,13 @@
     }
     .bg {
       width: 90%;
-      height: 80%;
+      height: 70%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       img {
         border-radius: 0 0 1em 1em;
-        height: 100%;
+        height: 90%;
         width: 100%;
       }
     }
