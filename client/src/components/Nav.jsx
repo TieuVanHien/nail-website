@@ -56,7 +56,7 @@ export const Nav = () => {
               setOpen(false);
             }}
           >
-            Menu
+            Gallery
           </Link>
           <Link
             className="link"

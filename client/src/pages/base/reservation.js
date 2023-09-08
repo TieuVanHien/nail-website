@@ -50,7 +50,7 @@ export const Reservation = () => {
     <section className="reservation" id="reservation">
       <div className="container">
         <div className="title">
-          <h1>Reservation</h1>
+          <h1>Book Your Desired Services </h1>
           <p style={{ width: "50%" }}>
             Ready to experience the luxury and convenience of our nail services?
             Reserve your spot at QueenIsland Nails & Spa today! place, we offer
