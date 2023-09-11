@@ -1,14 +1,11 @@
 import { about, nail1, nail2 } from "../../images";
-import { Zoom } from "react-reveal";
 
 export const About = () => {
   return (
     <section className="about" id="about">
       <div className="container">
         <div className="about background ">
-          <Zoom left>
-            <img src={about} alt="about caravelle" />
-          </Zoom>
+          <img src={about} alt="about caravelle" />
         </div>
         <div className="about infor">
           <h3>~ WHO WE ARE</h3>
