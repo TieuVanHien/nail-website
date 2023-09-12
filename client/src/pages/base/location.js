@@ -11,13 +11,15 @@ export const Location = () => {
     <section className="location" id="location">
       <div className="container">
         <div className="location">
-          <h2 style={{ marginBottom: "1em" }}>
-            Come And Join Us at Unit #2-539 Queensland Dr SE, Calgary, AB T2J
-            4G4!!
-          </h2>
+          <div className="heading">
+            <h2 style={{ marginBottom: "1em" }}>
+              Come And Join Us at Unit #2-539 Queensland Dr SE, Calgary, AB T2J
+              4G4!!
+            </h2>
+          </div>
+
           <div className="open-time">
             <h2>Open Hours:</h2>
-
             <div className="time">
               <h3> Monday </h3>
               <p>9 a.m. - 5 p.m</p>
@@ -46,10 +48,14 @@ export const Location = () => {
               <h3> Sunday </h3>
               <p>Closed</p>
             </div>
+            <Button
+              className="button-dir"
+              style={{ marginTop: "2em" }}
+              variant="text"
+            >
+              Get Direction
+            </Button>
           </div>
-          <Button className="button-dir" variant="text">
-            Get Direction
-          </Button>
         </div>
         <div className="map">
           <Map location={location} zoomLevel={17} />
