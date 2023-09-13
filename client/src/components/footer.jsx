@@ -11,8 +11,8 @@ export const Footer = () => {
           <div className="left-text">
             <h2>Ready to get started?</h2>
             <p>
-              Lorem ipsum dolar sot amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt.
+              Experience the ultimate nail makeover by reserving your spot with
+              us. Your beautiful nails await – Contact Us Now!
             </p>
             <Button
               className="button"
