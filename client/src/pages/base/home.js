@@ -1,25 +1,16 @@
-import home from "../../images/home.jpeg";
-import Logo from "../../assets/queenisland.jpg";
+import home from "../../images/home-background.png";
 
 export const Home = () => {
   return (
     <section className="home" id="home">
       <div className="container">
-        <div className="bg">
+        <div className="heading">
+          <h1>Discover the Artistry of </h1>
+          <h1 style={{ marginLeft: "4em" }}>Nail Elegance at Our Salon</h1>
+        </div>
+        <div className="home-img">
           <img src={home} alt="home page background" />
         </div>
-        <img
-          style={{
-            borderRadius: "50%",
-            position: "absolute",
-            marginTop: "5em",
-            width: "15em",
-            height: "15em",
-          }}
-          src={Logo}
-          className="logo"
-          alt="logo"
-        />
       </div>
     </section>
   );

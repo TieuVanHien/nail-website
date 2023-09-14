@@ -1,4 +1,4 @@
-export const home = require("./home.jpeg");
+export const home = require("./home-background.png");
 export const about = require("./about-us.jpg");
 export const nailEx1 = require("./nail-ex1.jpg");
 export const nailEx2 = require("./nail-ex2.jpg");
