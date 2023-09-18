@@ -1,6 +1,7 @@
 import { Link } from "react-scroll";
 import React, { useState } from "react";
 import { Sling as Hamburger } from "hamburger-react";
+import { name, logo } from "../assets";
 
 export const Nav = () => {
   const [open, setOpen] = useState(false);
@@ -9,12 +10,13 @@ export const Nav = () => {
   return (
     <section className="nav">
       <div className="nav-container">
-        <Link className="home" to="home" smooth={true}>
-          <h2>QueenIsland Nails & Spa</h2>
-        </Link>
+        <div className="logo-img">
+          <img className="logo" src={logo} alt="logo of salon" />
+          <img src={name} className="name" alt="name of salon" />
+        </div>
         <Hamburger
           size={25}
-          color="white"
+          color="black"
           rounded
           toggled={close}
           toggle={setClose}
