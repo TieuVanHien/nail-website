@@ -13,20 +13,20 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: $black;
+    background-color: #fcfaf9;
     .hamburger-react {
       display: none;
     }
     .home {
       width: 30%;
-      color: $white;
+      color: $black;
       margin-left: 1em;
     }
     .nav-links {
       margin-left: 15em;
 
       .link {
-        color: $white;
+        color: $black;
         margin: 1.5em;
         text-decoration: none;
         &.active {
