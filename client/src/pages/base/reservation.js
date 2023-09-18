@@ -11,21 +11,19 @@ export const Reservation = () => {
     time: "",
     email: "",
     phone: "",
-    people: "",
+    service: "",
   });
-  const { name, date, time, email, phone, people } = values;
+  const { name, date, time, email, phone, service } = values;
   const handleChange = (vls) => (event) => {
     setValues({ ...values, [vls]: event.target.value });
   };
 
   const handleSend = (event) => {
     event.preventDefault();
-    if (!name || !date || !time || !email || !phone || !people) {
+    if (!name || !date || !time || !email || !phone || !service) {
       return toast.error("Please fill all the form!");
-    } else if (people < 1 || people > 20) {
-      return toast.error("Number of people is not valid (must be 1-20)");
     } else {
-      sendMail({ name, date, time, email, phone, people })
+      sendMail({ name, date, time, email, phone, service })
         .then((data) => {
           if (data.err) {
             console.log("err", data.err);
@@ -37,7 +35,7 @@ export const Reservation = () => {
               time: "",
               email: "",
               phone: "",
-              people: "",
+              service: "",
             });
             return toast.success("Your reservation has been sent!");
           }
@@ -56,8 +54,6 @@ export const Reservation = () => {
             Reserve your spot at QueenIsland Nails & Spa today! place, we offer
             best ever!
           </p>
-          <h2>Schedule</h2>
-          <p>Monday to Sunday: 11:00 - 00:00 am</p>
         </div>
         <div className="form-text">
           <ToastContainer position="bottom-center" limit={1} />
@@ -95,11 +91,11 @@ export const Reservation = () => {
                 min={1}
                 max={20}
                 variant="outlined"
-                label="Number People"
-                placeholder="(1 - 20)"
-                type="number"
-                value={people}
-                onChange={handleChange("people")}
+                label="Service"
+                placeholder="Mandicure, Pandicure, etc."
+                type="text"
+                value={service}
+                onChange={handleChange("service")}
               />
               <TextField
                 className="input"

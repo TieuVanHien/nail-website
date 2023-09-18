@@ -1,12 +1,6 @@
 import { Button } from "@mui/material";
-import { Map } from "../../components/Map.jsx";
 
 export const Location = () => {
-  const location = {
-    address: "Unit #2-539 Queensland Dr SE, Calgary, AB T2J 4G4",
-    lat: 50.93971808146138,
-    lng: -114.02541911624382,
-  };
   return (
     <section className="location" id="location">
       <div className="container">
@@ -56,9 +50,6 @@ export const Location = () => {
               Get Direction
             </Button>
           </div>
-        </div>
-        <div className="map">
-          <Map location={location} zoomLevel={17} />
         </div>
       </div>
     </section>
