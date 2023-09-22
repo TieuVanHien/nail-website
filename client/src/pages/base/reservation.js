@@ -13,7 +13,11 @@ export const Reservation = () => {
             us."
           </h1>
           <Button className="button" variant="contained">
-            <a href="https://nailsolutionplus.firebaseapp.com/?storeKey=-NepEiE07PfDpG0CPAhq&fbclid=IwAR0CiAXznHkjYi2JmytyH0-OsMUOqvCfK6sHeSAQFBRs9JkjK1swcISJ-co">
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://nailsolutionplus.firebaseapp.com/?storeKey=-NepEiE07PfDpG0CPAhq&fbclid=IwAR0CiAXznHkjYi2JmytyH0-OsMUOqvCfK6sHeSAQFBRs9JkjK1swcISJ-co"
+            >
               Book Now
             </a>
           </Button>

@@ -25,7 +25,7 @@
       font-family: "Courgette", cursive;
       h1 {
         margin-left: 2em;
-        font-size: 2.7em;
+        font-size: 2.5em;
       }
     }
 
@@ -52,15 +52,6 @@
         margin-top: 55em;
         margin-right: 2em;
         font-size: 0.5em;
-        // .head1 {
-        //   margin-top: 4em;
-        //   text-align: right;
-        //   margin-right: 0.5em;
-        // }
-        // .head2 {
-        //   margin-bottom: 3em;
-        //   margin-right: 5em;
-        // }
       }
 
       .home-img {
@@ -69,6 +60,13 @@
         img {
           width: 80%;
         }
+      }
+    }
+  }
+  @include respond-to("laptop") {
+    .container {
+      .heading {
+        font-size: 0.7em;
       }
     }
   }

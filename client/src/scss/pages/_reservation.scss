@@ -19,7 +19,7 @@
     align-items: center;
     .box {
       width: 40%;
-      height: 30%;
+      height: 40%;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -40,6 +40,28 @@
         a {
           color: $white;
           text-decoration: none;
+        }
+      }
+    }
+  }
+  @include respond-to("tablet") {
+    .card {
+      .box {
+        height: 50%;
+        width: 50%;
+        h1 {
+          font-size: 1em;
+        }
+      }
+    }
+  }
+  @include respond-to("laptop") {
+    .card {
+      .box {
+        height: 50%;
+        width: 50%;
+        h1 {
+          font-size: 1em;
         }
       }
     }
