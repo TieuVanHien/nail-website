@@ -16,11 +16,16 @@
     background-color: #fcfaf9;
     .logo-img {
       display: flex;
+      justify-content: center;
+      align-items: center;
       margin-left: 3em;
       height: 100%;
       .logo {
         width: 40%;
         height: 80%;
+      }
+      .name {
+        height: 70%;
       }
     }
     .hamburger-react {
