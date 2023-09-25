@@ -2,7 +2,7 @@ import React from "react";
 
 import { BrowserRouter as Router } from "react-router-dom";
 import { Nav, Footer } from "./components";
-import { Home, About, Gallery, Reservation } from "./pages";
+import { Home, About, Gallery, Reservation, Service } from "./pages";
 
 function App() {
   return (
@@ -12,8 +12,8 @@ function App() {
         <Home />
         <About />
         <Gallery />
+        <Service />
         <Reservation />
-        {/* <Location /> */}
       </Router>
       <br />
       <Footer />
