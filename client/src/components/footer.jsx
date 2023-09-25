@@ -1,6 +1,7 @@
 import { Button } from "@mui/material";
 import React, { useState } from "react";
 import { ContactModal } from "./modal/contactModal";
+import { FaFacebook, FaInstagram } from "react-icons/fa";
 
 export const Footer = () => {
   const [open, handleOpen] = useState(false);
@@ -25,17 +26,6 @@ export const Footer = () => {
           </div>
         </div>
         <div className="right-footer">
-          <div className="heading">
-            <h3 style={{ marginBottom: "1em" }}>
-              <a
-                target="_blank"
-                rel="noreferrer"
-                href="https:www.google.ca/maps/dir/51.0283134,-113.983647/star+nails+boutique/@50.9798899,-114.1118722,12z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x5371771fc7c55555:0x59d9e9b11c6b001a!2m2!1d-114.0254593!2d50.9396207?entry=ttu"
-              >
-                Unit #2-539 Queensland Dr SE, Calgary, AB T2J 4G4!!
-              </a>
-            </h3>
-          </div>
           <div className="open-time">
             <div className="time">
               <h3> Monday - Saturday </h3>
@@ -45,16 +35,36 @@ export const Footer = () => {
               <h3> Sunday </h3>
               <p>Closed</p>
             </div>
-
-            <Button
-              className="button-dir"
-              style={{ marginTop: "2em" }}
-              variant="text"
-            >
-              Get Direction
+            <Button className="button" variant="contained">
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https:www.google.ca/maps/dir/51.0283134,-113.983647/star+nails+boutique/@50.9798899,-114.1118722,12z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x5371771fc7c55555:0x59d9e9b11c6b001a!2m2!1d-114.0254593!2d50.9396207?entry=ttu"
+              >
+                Get Direction
+              </a>
             </Button>
           </div>
+          <div className="social">
+            <h3>Follow Us On:</h3>
+            <a href="/">
+              <FaFacebook
+                className="icon"
+                style={{ marginRight: "0.45em" }}
+                size={28}
+              />
+            </a>
+            <a href="/">
+              <FaInstagram className="icon" size={28} />
+            </a>
+          </div>
         </div>
+      </div>
+      <div className="bottom">
+        <div className="line"></div>
+        <h4 style={{ marginTop: "0.5em" }}>
+          Copyright © 2023 QueenIsland Nails & Spa. All Rights Reserved.
+        </h4>
       </div>
     </section>
   );
