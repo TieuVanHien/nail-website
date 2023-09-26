@@ -21,7 +21,7 @@ export const Service = () => {
                   <li>Toe Set</li>
                   <li>And More...</li>
                 </ul>
-                <h3>Starting From +$35</h3>
+                <h3>Starting From +$49</h3>
               </div>
               <Button className="button" variant="contained">
                 <a
