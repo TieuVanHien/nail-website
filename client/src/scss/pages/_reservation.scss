@@ -49,12 +49,11 @@
         height: 60%;
         width: 55%;
         h2 {
-          font-size: 0.7em;
+          font-size: 0.2em;
         }
       }
     }
   }
-
   @include respond-to("laptop") {
     .card {
       .box {
