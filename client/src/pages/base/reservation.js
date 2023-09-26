@@ -6,12 +6,12 @@ export const Reservation = () => {
     <section className="reservation" id="reservation">
       <div className="card">
         <div className="box">
-          <h1>
+          <h2>
             "Welcome to our Nail Salon's easy and convenient booking system,
             designed to pamper your hands and feet with the utmost care. Treat
             yourself to rejuvenating nail experience by reserving your spot with
             us."
-          </h1>
+          </h2>
           <Button className="button" variant="contained">
             <a
               target="_blank"
