@@ -63,6 +63,28 @@
       }
     }
   }
+  @include respond-to("mobile") {
+    .container {
+      height: 100vh;
+      background-size: cover;
+      .heading {
+        width: 100%;
+        display: inline-flex;
+        position: absolute;
+        margin-top: 55em;
+        margin-right: 2em;
+        font-size: 0.4em;
+      }
+
+      .home-img {
+        width: 100%;
+        position: absolute;
+        img {
+          width: 80%;
+        }
+      }
+    }
+  }
   @include respond-to("laptop") {
     .container {
       .heading {
