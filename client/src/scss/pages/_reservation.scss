@@ -54,6 +54,17 @@
       }
     }
   }
+  @include respond-to("mobile") {
+    .card {
+      .box {
+        height: 50%;
+        width: 50%;
+        h1 {
+          font-size: 0.8em;
+        }
+      }
+    }
+  }
   @include respond-to("laptop") {
     .card {
       .box {
