@@ -114,7 +114,7 @@
         }
       }
     }
-    @include respond-to("tablet") {
+    @include respond-to("mobile") {
       display: flex;
       width: 100%;
       justify-content: space-between;
