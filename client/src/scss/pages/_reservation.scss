@@ -49,22 +49,12 @@
         height: 60%;
         width: 55%;
         h2 {
-          font-size: 1em;
+          font-size: 0.7em;
         }
       }
     }
   }
-  @include respond-to("mobile") {
-    .card {
-      .box {
-        height: 61%;
-        width: 55%;
-        h2 {
-          font-size: 0.4em;
-        }
-      }
-    }
-  }
+
   @include respond-to("laptop") {
     .card {
       .box {
