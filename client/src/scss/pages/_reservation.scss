@@ -26,7 +26,7 @@
       padding: 3em;
       align-items: center;
       background-color: $white;
-      h2 {
+      h3 {
         font-family: "Libre Baskerville", serif;
         font-family: "Montserrat", sans-serif;
         font-family: "Open Sans", sans-serif;
@@ -55,7 +55,29 @@
         justify-content: center;
         align-items: center;
         padding-bottom: 3em;
-        h2 {
+        h3 {
+          font-size: 0.2em;
+        }
+        .button {
+          margin-top: 1em;
+          padding: 0.5em 2em 0.5em 2em;
+        }
+      }
+    }
+  }
+  @include respond-to("mobile") {
+    .card {
+      width: 90%;
+      height: 100%;
+      .box {
+        height: 100%;
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 3em;
+        h3 {
           font-size: 0.1em;
         }
         .button {
@@ -70,7 +92,7 @@
       .box {
         height: 50%;
         width: 50%;
-        h2 {
+        h3 {
           font-size: 1em;
         }
       }
