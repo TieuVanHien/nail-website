@@ -63,7 +63,7 @@ export const Footer = () => {
       <div className="bottom">
         <div className="line"></div>
         <h4 style={{ marginTop: "0.5em" }}>
-          Copyright © 2023 QueenIsland Nails & Spa. All Rights Reserved.
+          Copyright © 2023 Queensland Nails & Spa. All Rights Reserved.
         </h4>
       </div>
     </section>

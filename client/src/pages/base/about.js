@@ -9,7 +9,7 @@ export const About = () => {
         </div>
         <div className="about infor">
           <h3>~ WHO WE ARE</h3>
-          <h1>QueenIsland - We are Here To Serve The Best Beauty Services</h1>
+          <h1>Queensland - We are Here To Serve The Best Beauty Services</h1>
           <p>
             We take pride in offering an array of nail services designed to
             enhance your natural beauty and boost your confidence.

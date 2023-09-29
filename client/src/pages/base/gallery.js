@@ -24,7 +24,7 @@ export const Gallery = () => {
         <div className="menu-text">
           <p>
             Explore our gallery and immerse yourself in the world of exquisite
-            nail artistry at QueenIsland.
+            nail artistry at Queensland.
             <img className="narrow-img" src={Narrow} alt="Narrow" />
             <Button className="button" onClick={() => handleOpen(true)}>
               See More
