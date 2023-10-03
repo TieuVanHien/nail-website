@@ -28,12 +28,16 @@ export const Footer = () => {
         <div className="right-footer">
           <div className="open-time">
             <div className="time">
-              <h3> Monday - Saturday </h3>
-              <p>9 a.m. - 5 p.m</p>
+              <h3> Monday - Friday </h3>
+              <p>10 a.m. - 7 p.m</p>
+            </div>
+            <div className="time">
+              <h3> Saturday </h3>
+              <p>10 a.m - 5 p.m</p>
             </div>
             <div className="time">
               <h3> Sunday </h3>
-              <p>Closed</p>
+              <p>11 a.m - 5 p.m</p>
             </div>
             <Button className="button" variant="contained">
               <a
