@@ -1,11 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 import Modal from "react-modal";
-import { ModalEmail } from "./modalEmail";
+
 import "react-toastify/dist/ReactToastify.css";
 import { Link } from "@mui/material";
 
 export const ContactModal = ({ OpenModal }) => {
-  const [open, handleOpen] = useState(false);
   return (
     <Modal
       isOpen={OpenModal}
@@ -14,7 +13,6 @@ export const ContactModal = ({ OpenModal }) => {
       className="mod-contact"
       overlayClassName="over-lay"
     >
-      {/* <ToastContainer position="bottom-center" limit={1} /> */}
       <div className="mod-container">
         <div className="mod-text">
           <div className="mod-header">
@@ -27,12 +25,14 @@ export const ContactModal = ({ OpenModal }) => {
             </div>
             <div className="mod-email">
               <p>
-                {" "}
                 Email <br />
-                <Link className="email-link" onClick={() => handleOpen(true)}>
+                <Link
+                  className="email-link"
+                  target="_blank"
+                  href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=queenslandnailsandspa@gmail.com"
+                >
                   queenslandnailsandspa@gmail.com
                 </Link>
-                {open && <ModalEmail OpenModal={handleOpen} />}
               </p>
             </div>
           </div>
