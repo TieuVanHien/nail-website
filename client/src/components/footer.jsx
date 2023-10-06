@@ -51,14 +51,23 @@ export const Footer = () => {
           </div>
           <div className="social">
             <h3>Follow Us On:</h3>
-            <a href="/">
+
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://www.facebook.com/profile.php?id=61551378276946"
+            >
               <FaFacebook
                 className="icon"
                 style={{ marginRight: "0.45em" }}
                 size={28}
               />
             </a>
-            <a href="/">
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://www.instagram.com/queensland.nailsyyc/?hl=vi"
+            >
               <FaInstagram className="icon" size={28} />
             </a>
           </div>
