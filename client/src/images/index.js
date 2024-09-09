@@ -45,6 +45,7 @@ export const nails9 = require("./nails-9.jpg");
 export const nails10 = require("./nails-10.jpg");
 export const nails11 = require("./nails-11.jpg");
 export const location = require("./location.jpg");
+export const closed = require("./closed.png");
 
 export {
   ex1,
