@@ -6,7 +6,7 @@ import { Nav, Footer } from "./components";
 import { Home, About, Gallery, Reservation, Service } from "./pages";
 
 function App() {
-  const [showPopup, setShowPopup] = useState(true);
+  const [showPopup, setShowPopup] = useState(false);
   const handlePopup = () => {
     setShowPopup(!showPopup);
   };
